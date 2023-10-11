@@ -1,0 +1,163 @@
+@font-face {
+    font-family: 'brittani';
+        src: url('./assets/BrittanySignature-LjyZ.otf') format('opentype');
+}
+@font-face {
+    font-family: 'cinzel';
+        src: url('./assets/Cinzel-VariableFont_wght.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'cinzel-deco';
+        src: url('./assets/CinzelDecorative-Regular.ttf') format('truetype');
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Cinzel:wght@400;500;600&display=swap'); */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #271F11;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.pattern{
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.1;
+    position: fixed;
+    background-repeat:repeat;
+    background-image: url('./assets/pattern.svg');
+}
+
+.wrapper{
+    display: flex;
+}
+
+/* main styles */
+
+.main{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    width: 60%;
+}
+
+.main > *{
+    margin-bottom: 10px;
+}
+
+.design{
+    background-image: url('./assets/nit_logo.png');
+    background-size: 80px;
+    background-position: 50% 50%;
+    background-repeat:no-repeat;
+}
+
+.logo{
+    width: 200px;
+}
+
+.text p{
+    font-family: 'cinzel', serif;
+    text-transform: uppercase;
+    color: #C8A25D;
+    font-size: 3rem;
+}
+
+.coming_soon{
+    color: white;
+    font-family: 'brittani';
+    font-size: 4rem;
+}
+
+.countdown{
+    font-size: 9rem;
+    color: white;
+    display: flex;
+    font-family: 'cinzel';
+}
+
+.timer p{
+    font-size: 8rem;
+}
+
+.timer h2{
+    font-size: 1.4rem;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: 'cinzel';
+    font-weight: 400;
+}
+
+.timer{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+/* side designs */
+
+.side_design{
+    width: 30%;
+}
+
+.side_design img{
+    width: 95%;
+    opacity: 0.5;
+    }
+
+.left{
+    position: relative;
+    bottom: -80%;
+    left: -32%;
+}
+
+
+.right
+{
+    position: relative;
+    left: 40%;
+    top: -15%;
+}
+
+
+@media screen and (max-width:600px) {
+    .side_design{
+        display: none;
+    }
+    .timer p{
+        font-size: 3.8rem;
+    }
+    .timer h2{
+        font-size: 0.7rem;
+    }
+    .main{
+        width: 100%;
+        gap: 15px;
+    }
+    .text p{
+        font-size: 2rem;
+    }
+    .coming_soon{
+        font-size: 2.5rem;
+    }
+    .text img{
+        width: 100%;
+    }
+    .logo{
+        width: 275px;
+    }
+
+    .design{
+        background-size: 120px;
+    }
+}
